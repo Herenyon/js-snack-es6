@@ -40,4 +40,8 @@ const squadre = [
     },
 ]
 
-
+const posizioneSquadre = squadre.map(({ nome, punti, falliSubiti }) => {
+    punti = Math.floor(Math.random() * 100);
+    falliSubiti = Math.floor(Math.random() * 100);
+    return { nome, punti, falliSubiti };
+});
