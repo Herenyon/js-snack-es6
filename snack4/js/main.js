@@ -45,3 +45,6 @@ const posizioneSquadre = squadre.map(({ nome, punti, falliSubiti }) => {
     falliSubiti = Math.floor(Math.random() * 100);
     return { nome, punti, falliSubiti };
 });
+
+const squadreFalli = squadre.map(({ nome, falliSubiti }) => ({ nome, falliSubiti }));
+console.table(squadreFalli);
